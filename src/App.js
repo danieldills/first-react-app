@@ -30,7 +30,6 @@ handleClose =() => {
       <div className="App">
           <header>
           <Header />
-          <Footer />
           <Main
           cards={this.state.displayModal}
           displayModal={this.displayAsModal}

@@ -36,8 +36,8 @@ Number and name of feature: Passing Functions in Props
 
 Estimate of time needed to complete: Feature #1: Display a Modal
 
-Start time: 1:30
+Start time: 5:30
 
-Finish time: _____
+Finish time: 9:30
 
-Actual time needed to complete: _____
+Actual time needed to complete: 240 minutes

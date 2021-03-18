@@ -31,3 +31,13 @@ Start time: 5:50 PM
 Finish time: 6:55 PM
 
 Actual time needed to complete: 65 minutes
+---
+Number and name of feature: Passing Functions in Props
+
+Estimate of time needed to complete: Feature #1: Display a Modal
+
+Start time: 1:30
+
+Finish time: _____
+
+Actual time needed to complete: _____

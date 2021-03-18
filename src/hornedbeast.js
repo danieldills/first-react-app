@@ -10,18 +10,33 @@ class HornedBeast extends React.Component {
             numberOfClicks: 0
         }
     }
-    numberOfClicks = () => {
-        this.setState({ numberOfClicks: this.state.numberOfClicks + 1 });
-        }
+    
     render() {
-        
+      const numberOfClicks = () => {
+            this.setState({ numberOfClicks: this.state.numberOfClicks + 1 });
+            popOut(this.props.index);
+            }
+            
+        const popOut = (index) => {
+            this.props.displayModal(index);
+        }
+
         return (
-            <div>
-                <Card style={{ width: '18rem' }}>
-                <Card.Img src={this.props.image} alt={this.props.title} onClick={this.numberOfClicks} />
+            <div id="Horned Beasts">
+                <Card style={{ width: '15rem' }}>
                 <Card.Body>
-                    <Card.Title>{this.props.title} 💜 = {this.state.numberOfClicks}</Card.Title>
-                    <Card.Text>{this.props.description}</Card.Text>
+                    <Card.Title>{this.props.title}</Card.Title>
+                    <Card.Text>
+                        {this.props.description}
+                    </Card.Text>
+                    <Card.Text>
+                        💜 = {this.state.numberOfClicks}
+                    </Card.Text>
+                    <Card.Img
+                    onClick={numberOfClicks}  
+                    src={this.props.image} 
+                    description={this.props.description} 
+                    title={this.props.title} />
                 </Card.Body>
                 </Card>
             </div>
